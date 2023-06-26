@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="imgs/image.jpg" alt="Main Image">
+    <form action="" method="get">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="John Doe" pattern="\w+\s+\w+" required>
+      <br>
+      <label for="gender">Gender</label>
+      <div class="gender">
+        <label class="male">
+          <input type="radio" name="gender" id="gender" checked value="male">
+          <span class="checkmark"></span>
+          <span class="name">Male</span>
+        </label>
+        <label class="female">
+          <input type="radio" name="gender" id="gender" value="female">
+          <span class="checkmark"></span>
+          <span class="name">Female</span>
+        </label>
+      </div>
+      <br>
+      <label for="birth">Date Of Birth</label>
+      <input type="text" name="birth" id="birth" placeholder="May 25, 1977" pattern="\w{3,}\s+\d{2},?\s*\d{4}" required>
+      <br>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="johndoe@abc.com" required>
+      <br>
+      <label for="city">City</label>
+      <input type="text" name="city" id="city" placeholder="Moisture Farm">
+      <br>
+      <label for="country">Country</label>
+      <input type="text" name="country" id="country" placeholder="Tatooine">
+      <br>
+      <input type="reset" value="Cancel">
+      <input type="submit" value="Save">
+    </form>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
